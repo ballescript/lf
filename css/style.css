@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+}
+.logo {
+    position: fixed;
+    left: -8px;
+    top: 10px;
+    width: 75vw;
+    max-width: 500px;
+    background-color:#DAA520;
+    box-shadow: 2px 2px 1px black;
+    border-radius: 8px;
+    border-style: ridge;
+    border-color: #FFD700;
+}
+.logo p {
+    margin-left: 40px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foto {
+    width: 24vw;
+    height: 24vw;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+@media (max-width: 1200px) {
+    .foto {
+        width: 32vw;
+        height: 32vw;
+    }
+}
+@media (max-width: 900px) {
+    .foto {
+        width: 48vw;
+        height: 48vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .foto {
+        width: 98vw;
+        height: 98vw;
+    }
+}
+.contacto {
+    text-align: center;
+    color: #DAA520;
+    padding-top: 10px;
+}
+#social {
+    text-align: center;
+        margin-bottom: 10px;
+  }
+  .fab, .fas {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+  }  
+  
+  .fab:hover, .fas:hover {
+      opacity: 0.5;
+      text-decoration: none;
+  }

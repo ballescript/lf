@@ -1,7 +1,9 @@
 body {
     margin: 0;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #DAA520;
 }
 .logo {
     position: fixed;
@@ -16,48 +18,67 @@ body {
     border-color: #FFD700;
 }
 .logo p {
-    margin-left: 30px;
+    margin-left: 40px;
+    text-align: left;
+    color: black;
 }
 .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .foto {
     width: 99vw;
     height: 99vw;
-    display: flex;
+    
     background-position: center;
     background-size: cover;
     object-fit: cover;
     
 }
-@media only screen and (min-width: 400px) {
-    .foto {
-        width: 48vw;
-        height: 48vw;
-    }
-}
-@media only screen and (min-width: 900px) {
-    .foto {
-        width: 32vw;
-        height: 32vw;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     .foto {
         width: 24vw;
         height: 24vw;
     }
 }
-.contacto {
-    text-align: center;
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .foto {
+        width: 32vw;
+        height: 32vw;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 899px) {
+    .foto {
+        width: 48vw;
+        height: 48vw;
+    }
+}
+
+hr {
+    height: 2px;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #FFD700;
+    border: none;
+}
+
+a {
+    text-decoration: none;
     color: #DAA520;
-    padding-top: 10px;
+}
+
+.contacto {
+
+    color: #DAA520;
+
 }
 #social {
-    text-align: center;
+
         margin-bottom: 20px;
   }
   .fab, .fas {
@@ -70,4 +91,23 @@ body {
   .fab:hover, .fas:hover {
       opacity: 0.5;
       text-decoration: none;
+  }
+
+  .glow {
+    font-size: 20px;
+    color: gold;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white, 0 0 5px white, 0 0 6px white, 0 0 7px white;
+    }
+    
+    to {
+      text-shadow: 0 0 2px white, 0 0 3px white, 0 0 4px #ffd700, 0 0 5px #ffd700, 0 0 6px #ffd700, 0 0 7px #ffd700, 0 0 8px #ffd700;
+    }
   }

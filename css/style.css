@@ -24,8 +24,8 @@ body {
     justify-content: center;
 }
 .foto {
-    width: 100vw;
-    height: 100vw;
+    width: 99vw;
+    height: 99vw;
     display: flex;
     background-position: center;
     background-size: cover;
@@ -34,8 +34,8 @@ body {
 }
 @media only screen and (min-width: 400px) {
     .foto {
-        width: 50vw;
-        height: 50vw;
+        width: 49vw;
+        height: 49vw;
     }
 }
 @media only screen and (min-width: 900px) {
@@ -47,8 +47,8 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .foto {
-        width: 25vw;
-        height: 25vw;
+        width: 24vw;
+        height: 24vw;
     }
 }
 .contacto {
